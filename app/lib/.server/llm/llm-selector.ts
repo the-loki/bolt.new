@@ -16,5 +16,5 @@ export function selectLLM(type: LLMType): LLM {
 }
 
 export function getCurrentLLMType(): LLMType {
-  return process.env.LLM_TYPE as LLMType || 'anthropic';
+  return (process.env.LLM_TYPE as LLMType) || 'anthropic';
 }
